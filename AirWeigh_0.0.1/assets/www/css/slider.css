@@ -1,0 +1,28 @@
+.slide-header{
+  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  position: fixed;
+}
+
+.slide-header h1{
+
+  font-weight: 300;
+  color: #333333;
+  font-size: 2em;
+}
+
+.slide-header .img-preview{
+  margin: 0; padding: 0;
+}
+.slide-header .img-preview img{
+  margin: 0;
+  padding: 0;
+  height: 70px; /* same height as .slide-header */
+}
+.slide-module{
+  margin: 0;
+  height: 100%; /* 100 - .slide-header height */
+  padding-top: 90px; /* same length as .slide=header + any top/bottom margins */
+}

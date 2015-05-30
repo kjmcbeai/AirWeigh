@@ -1,0 +1,81 @@
+.mask-dial{
+  width: 280px;
+  height: 280px;
+  background-color: #333333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);         /* Opera */
+  -ms-transform: translate(-50%, -50%);       /* IE 9 */
+  -moz-transform: translate(-50%, -50%);      /* Firefox */
+  -webkit-transform: translate(-50%, -50%);  /* Safari and Chrome */
+
+  background-image: url('../../../../img/dial/dialBackground.png');
+
+  background-position-x: -15px;
+  background-position-y: -15px;
+
+  
+}
+.mask-dial .mask-dial__dial {
+  width: 280px; /* same width as .mask-dial */
+  height: 280px; /* same height as .mask-dial */
+  background-image: url('../../../../img/dial/color-gradient.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(139px 139px);
+  -webkit-clip-path: polygon(139px 139px); /* half way points, make sure to hide the background image until revealed */
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+.mask-dial .mask-dial__inset, .mask-dial .dial-needle {
+  width: 200px;
+  height: 200px;
+  background-color: #333333;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  -o-transform: translate(-50%, -50%);         /* Opera */
+  -ms-transform: translate(-50%, -50%);       /* IE 9 */
+  -moz-transform: translate(-50%, -50%);      /* Firefox */
+  -webkit-transform: translate(-50%, -50%);  /* Safari and Chrome */
+
+  background-image: url('../../../../img/dial/dialCover.png');
+  background-position-x: -60px;
+  background-position-y: -60px;
+}
+.mask-dial .dial-needle__container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+.mask-dial .dial-needle__needle{
+  position: relative;
+  top: 98%; /* have the triangle just underneath the inset/.dial-needle__container */
+  /* CSS TRIANGLE */
+  width: 0px;
+  height: 0px;
+  background-color: transparent; /* make sure the triangle portion is the only thing showing */
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 28px solid #d5d5d5; /* triangle color */
+  padding: 0px;
+  display: inline-block;
+}
+.mask-dial .mask-dial__text{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);         /* Opera */
+  -ms-transform: translate(-50%, -50%);       /* IE 9 */
+  -moz-transform: translate(-50%, -50%);      /* Firefox */
+  -webkit-transform: translate(-50%, -50%);  /* Safari and Chrome */
+}

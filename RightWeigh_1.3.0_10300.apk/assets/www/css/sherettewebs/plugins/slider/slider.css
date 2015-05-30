@@ -1,0 +1,39 @@
+.slide-module{
+  width: 100%;
+  height: 100%;
+}
+.slide-wrapper{
+  overflow: hidden;
+  width: 100%;
+  height: 94%;
+}
+.slide-page-navigation{
+  height: 6%; /* the rest of the height that the slide wrapper is missing from 100% */
+  width: 100%;
+  display: block;
+}
+.slide-container{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.slide-navigation ul{
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  max-height: 100%;
+}
+.slide-navigation li{
+  display: inline-block;
+  margin: 0px 5px;
+}

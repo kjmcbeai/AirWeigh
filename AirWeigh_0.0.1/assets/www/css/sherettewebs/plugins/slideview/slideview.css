@@ -1,0 +1,16 @@
+.slideview{
+  width: 100%;
+}
+.slideview,
+.slideview-container,
+.slideview-container__slide{
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slideview-container{
+  
+}
+.slideview-container__slide{
+  float: left;
+}

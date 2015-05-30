@@ -1,0 +1,636 @@
+/* Main Styles */
+html, body {overflow: hidden;}
+body{
+    /*font-size: 16px;*/
+    font-size: 100%;
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #ffffff;
+}
+/* Page Styles */
+#page-content{
+  color: #ffffff;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  /*background: #e5e9e8;*/
+  /*background-color: #606060;*/
+  background: -webkit-linear-gradient(#777777, #020202); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#777777, #020202); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#777777, #020202); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#777777, #020202); /* Standard syntax */
+
+  height: 88%;
+  border: 0px solid black;
+
+  background-image: url('../img/background.png');
+  background-size: 100% 100%;
+
+}
+.unit-measurement-container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.weight-alert{
+    width: 25px;
+    height: 25px;
+}
+.alert-ok{
+  color: #38E82E;
+  background-image: url('../img/icons/alert_good.png');
+  background-size: 25px 25px;
+}
+.alert-warning{
+  color: #ffff00;
+  background-image: url('../img/icons/alert_warning.png');
+  background-size: 25px 25px;
+}
+.alert-error{
+  color: #F52727;
+  background-image: url('../img/icons/alert_overweight.png');
+  background-size: 25px 25px;
+}
+.alert-off{
+  color: #8d8d8d;
+  background-image: url('../img/icons/alert_off.png');
+  background-size: 25px 25px;
+}
+
+.view-header{
+  height: 28%;
+}
+footer{
+  line-height: 50px;
+  height: 12%;
+}
+.view-content{
+  height: 72% !important; /* 100 - .page-header height - footer height */
+}
+
+#page-wrapper > *{padding: 0px;}
+
+/* Header Styles */
+#header .topcoat-navigation-bar__item, .topcoat-navigation-bar{
+  
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+
+}
+
+/* HEADER */
+h3.subheading{
+  margin: 0;
+  padding: 0;
+  font-size: .75em;
+}
+
+.indent{
+  padding-left: 2rem !important;
+}
+
+.truck-header h1{
+  font-size: 1.5rem;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+#footer nav{
+  height: 100%;
+  background-color: #333333;
+}
+
+#footer nav ul{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+}
+
+#footer nav ul li{
+  padding:0;
+  margin:0;
+  height: 100%;
+  width: 30%;
+  display: inline-block;
+  text-align:center;
+  position:relative;
+  vertical-align: middle;
+  position: relative;
+  width: 30%;
+}
+
+/* Truck Config List */
+.truck-config-list li{
+  height: 45px;
+  padding: 5px;
+}
+
+
+/* LJ */
+
+#footer nav ul li .button{
+  
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    text-align:center;
+  
+}
+
+#footer nav ul li .button:before{
+
+  content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#footer nav ul li img{
+  vertical-align: middle;
+    display: inline-block;
+}
+
+#footer{
+  height: 12%;
+  border: 0px solid #eaeaea; 
+}
+
+/* LJ End */
+
+/* Footer Styles */
+
+
+/* FONT STYLES */
+.font-large, h1{
+  font-size: 2em;
+}
+.font-small{
+  font-size: .8em;
+}
+
+/* Decoration Styles */
+.highlight-box{
+  border: 1px solid white;
+  box-shadow: 0 0 10px #ffffff;
+  background-color: #006699 !important; 
+}
+.container{
+  padding: 0 10px;
+}
+
+/* ICONS/Status */
+.highlight-checkmark{
+  position: relative;
+  right: 0;
+  top: -4px;
+  display: inline;
+}
+.address-checkmark{
+  top: 10px;
+}
+button.order-down{
+  background-image: url("../img/icons/icon-order-down.png");
+  background-repeat: no-repeat;
+}
+button.order-down, 
+div.order-down-template{
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+}
+.item-container{
+  font-size: .95rem;
+}
+.item-container button.order-down,
+.item-container div.order-down-template{
+  margin-right: 5px;
+}
+.header-icon img{
+  height: 4rem;
+}
+
+.icon-loading, .icon-status-completed{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.icon-status-error,
+.icon-status-completed{
+  width: 36px;
+  height: 36px;
+  z-index: 10000;
+  background-image: url("../img/icons/checkmark.png");
+  background-size: 36px 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-status-error{
+  background-image: url("../img/icons/icon-status-error.png");
+}
+.icon-status-completed{
+  background-image: url("../img/icons/checkmark.png");
+}
+.icon-disconnected, .icon-connecting, .icon-connected, .icon-disconnecting, .icon-error{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+}
+.icon-disconnected{
+  background-image: url('../img/icons/icon-disconnected.png');
+}
+.icon-disconnecting, 
+.icon-connecting{
+  animation: iconloading 0.75s linear infinite;
+  -moz-animation: iconloading 0.75s linear infinite;
+  -webkit-animation: iconloading 0.75s linear infinite;
+  background-image: url('../img/icons/spinner.png');
+  background-size: 25px 25px;
+}
+.icon-connected{
+  background-image: url('../img/icons/icon-connected.png');
+}
+.icon-error{
+  background-image: url('../img/icons/icon-error.png');
+}
+.status-container{
+  width: 100%;
+}
+.status-container .status__item{
+  line-height: 40px;
+  height: 40px;
+  padding: 0px 10px;
+  clear: both;
+  background-color: #f7f7f7;
+}
+.status-container .status__item.alt{
+  background-color: #d5d5d5;
+}
+.status-container .device{
+  float: left;
+}
+.status-container .status-icon{
+  float: right;
+  margin-top: 5px; /* attempt to center align the icon */
+}
+
+/* STEP GUIDE STYLES */
+.step-guide{
+  width: 90%;
+  margin: 2% 4%;
+  margin: 0 auto;
+}
+.step{
+  width: 100%;
+  margin: 1em;
+}
+.step .step__label{
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  position: relative;
+  top: -1em;
+}
+.step .step__details{
+  width: 71%;
+  display: inline-block;
+}
+.step__label .circle{
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  border: 2px solid black;
+  line-height: 1.25em;
+  font-size: 2em;
+  float: right;
+  margin-right: 10px;
+}
+.circle{
+  border: 2px solid black;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.step-header .circle{
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  border: 2px solid black;
+  line-height: 1.25em;
+  font-size: 1.75em;
+  position: absolute;
+  left: 7.5%;
+}
+.step-header h1{
+  margin: 0;
+  padding: 0;
+}
+.step-header .subheading{
+  display: block;
+}
+
+
+/* Button Styles */
+.nav-button-bar button{
+  display: inline-block;
+  font-size: 1em;
+  background-color: #eaeaea;
+  font-weight: 300;
+}
+.nav-button-bar button.full{
+  width: 100%;
+}
+.nav-button-bar button.half{
+  width: 49%;
+  margin-bottom: 2em;
+}
+.button-back, .button-cancel{
+  color: #8d8d8d;
+}
+.button-next, .button-save{
+  color: #288edf;
+}
+.button-small{
+
+}
+button.button-reconnect{
+  background-image: url("../img/icons/icon-reconnect.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: -3px;
+  left: 5px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+}
+
+
+
+
+
+button:disabled{
+  cursor: default !important;
+  opacity: .5;
+}
+
+
+button.rescan{
+  font-size: .65em;
+  padding: 0px 7px; margin: 0;
+  height: 1.3rem; /* same height as header */
+  position: absolute;
+  right: 0;
+  top:   0;
+  z-index: 2;
+}
+
+button.rescan:disabled{
+  cursor: default !important;
+  opacity: .5;
+}
+button.rescan:disabled:hover{
+  opacity: .5;
+  background-color: rgb(23, 59, 99);
+}
+button {
+  margin-top: 2rem;
+  cursor: pointer !important;
+}
+
+.topcoat-button--cta.small{
+  line-height: 1em;
+  padding: 0em;
+}
+
+.topcoat-button,
+.topcoat-button--cta{
+  height: auto;
+}
+.topcoat-button--cta{
+  /*height: 40px;*/
+}
+
+.form-button-group button{
+  width: 50%;
+  margin: 0;
+  font-size: .85em;
+}
+
+
+/* Mobile Styles */
+.scroller {
+  overflow: auto;
+  /*-webkit-overflow-scrolling: touch;*/
+}
+
+/* Form Styles */
+.form-group label{
+  color: #4d4d4d;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.topcoat-textarea,
+.topcoat-textarea--large {
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+input[type="text"]{
+  color: #000000;
+  height: auto;
+}
+input[type="text"]:focus{
+  background-color: #ffffff;
+  color: #000000;
+}
+.weight-switch .topcoat-switch__toggle:before{
+  content: "kg";
+}
+.weight-switch .topcoat-switch__toggle:after{
+  content: "lbs";
+}
+
+/* Image Styles */
+.img-preview img{
+  margin: 10px 0px;
+  height: 70px;
+  /*border: 1px solid #d9d9d9;*/
+}
+
+/* Container Styles */
+.item-container{
+  padding: 5px;
+  border-top: 1px solid black;
+}
+.weight-breakdown .item-container{
+  line-height: 40px;
+  vertical-align: middle;
+}
+/* Truck Weight View Device/Axle Row Styles */
+.deviceinfo-row{
+  width: 100%;
+}
+.deviceinfo-row .order-icon,
+.axleinfo-row .order-icon{
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.deviceinfo-row .order-down,
+.axleinfo-row .order-down{
+  background-image: url('../img/icons/icon-order-down.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.deviceinfo-row .device-name,
+.axleinfo-row .axle-name,
+.totalweight-row .total-weight{
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  height: 100%;
+}
+.totalweight-row .total{
+  margin-top: 0;
+}
+.deviceinfo-row .button-reconnect,
+.deviceinfo-row .button-reconnect-template{
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 3px; /* middle align button with status icon */
+}
+.deviceinfo-row button.button-reconnect{
+  width: 40px;
+  height: 40px;
+}
+.deviceinfo-row .status-icon,
+.axleinfo-row .weight-alert,
+.totalweight-row .weight-alert{
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-top: 7px; /* the difference between .weight-breakdown .item-container - this.height */
+}
+.axleinfo-row{
+  width: 100%;
+  padding-left: 25px; /* width of order arrow icon */
+}
+.axleinfo-row .weight-alert,
+.totalweight-row .weight-alert{
+  margin-left: 7px;
+}
+.totalweight-row{
+  padding-left: 10px;
+}
+.touch-highlight:active{
+  background-color: #898989;
+}
+
+/* Text Styles */
+.mac-address{
+  display: block;
+  font-size: .5em;
+}
+
+.disclaimer, .disclaimer-upper{
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+.disclaimer{
+  font-weight: 100;
+}
+.disclaimer-upper{
+  /*
+  text-transform: uppercase;
+  */
+  font-weight: 600;
+}
+.important{
+  font-weight: 600;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.active{
+  color: #006699;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/* Configuration Styles */
+.config-window__footer{
+  position: absolute;
+  bottom: 0;
+  height: 20%; /* 100% - content height */
+}
+.config-window__footer .breadcrumb{
+  position: absolute;
+  bottom: 0;
+}
+
+.config-window__content{
+  height: 80%;
+}
+.config-window__content .subview-element{
+  height: 100%;
+}
+
+/* Sync Data */
+.device-data{
+  text-align: left;
+}
+ul.list{
+  list-style-type: circle;
+  padding-left: 2.5rem;
+}
+
+/* Send Email */
+
+#sendEmailImage{
+
+  margin-top: -30px;
+}
+
+/* MISC STYLES */
+.install-video{
+  height: 40%;
+  border-top: 2px solid #000000;
+  border-bottom: 1px solid #000000;
+  background: -webkit-linear-gradient(#347e2e, #ddedc5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#347e2e, #ddedc5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#347e2e, #ddedc5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#347e2e, #ddedc5); /* Standard syntax */
+}
+.table{
+  display: table;
+}
+.table-cell{
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 5%;
+}
+
+.topcoat-list{
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.topcoat-list__item{
+
+  background-color: #666666;
+}

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <!-- 3rd Party Styles -->
+    <link rel="stylesheet" type="text/css" href="css/sherettewebs/core.css" />
+    <link rel="stylesheet" type="text/css" href="css/topcoat/topcoat-mobile-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/sherettewebs/plugins/slider/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/sherettewebs/plugins/dial/mask-dial.css" />
+    <link rel="stylesheet" type="text/css" href="css/sherettewebs/plugins/modal-window/modal-window.css" />
+    <link rel="stylesheet" type="text/css" href="css/sherettewebs/plugins/slideview/slideview.css" />
+    <!-- App Styles -->
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/mask-dial.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal-window.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/sherettewebs/mobile-mockup.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/app-mobile.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/lj.css" />
+    
+    <title>Right Weigh Bluetooth Application</title>
+
+  </head>
+  <body>
+    <!-- Begin Page Wrapper -->
+    <div id="page-wrapper">
+      <!--<header id="header"></header>-->
+      
+      <div id="page-content"></div>
+      
+      <footer id="footer" class="center"></footer>
+    </div>
+    <!-- End Page Wrapper-->
+    <div id="icon-loading"><img src="img/icons/spinner.png" alt="loading..." /></div>
+    
+    <!-- Begin Templates -->
+    <script type="text/template" id="tmplHeader">
+      <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item center full">
+          <h1 class="topcoat-navigation-bar__title app-header">Right Weigh Mockup</h1>
+        </div>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplFooter">
+      <nav>
+        <ul>
+          <li><span data-modal-view="editProfile" class="main-nav-button button sw-plugin-modal-window-button"><img src="img/icons/iconSettings.png" width="48" height="48"/></span></li>
+          <li><span data-modal-view="send" class="main-nav-button button sw-plugin-modal-window-button"><img src="img/icons/iconSend.png" width="48" height="48"/></span></li>
+        </ul>
+      </nav>
+    </script>
+    
+    <script type="text/template" id="tmplBluetoothUnitConnect">
+      <div class="container">
+        <h1>Connect Unit Test</h1>
+
+        <button type="button" class="topcoat-button nav-button" data-action="connect">Connect</button>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplTruckWeight">
+      <% if(inInitialSetupState === true) {%>
+        
+      <% }else { %>
+      <div class="truck-header view-header full center">
+        <h1><%= headerTitle %></h1>
+        <div class="img-preview" id="truck-config-image">
+          <% var configImgUrl = profileModel.get("configImgUrl"); %>
+          <% if(configImgUrl && configImgUrl !== "img/truck-configurations/default.png"){ %>
+            <br />
+            <img src="<%= profileModel.get('configImgUrl') %>" />
+          <% }else{ %>
+            <img src="img/rwls-logo.png" />
+          <% }/* end if config img found or not */ %>
+        </div>
+      </div>
+      <div class="view-content slideview" data-slideview-id="truck-weight">
+        <div class="slideview-container">
+        
+          <section class="scroll-pane scrollable slideview-container__slide">
+            <div class="center scroll-pane__contents scrollable">      
+              <div id="weight-breakdown" class="weight-breakdown center full">
+                <% profileModel.get('truckDevices').each(function(truckDevice, tdIndex){%>
+                  <% 
+                    var bluetoothDevice = truckDevice.get("bluetoothDeviceModel"),
+                        truckDeviceLength = profileModel.get("truckDevices").length,
+                        reconnect = ((bluetoothDevice.get("status") === "disconnected") || bluetoothDevice.get("status") === "error");
+                        //reconnect = ((!initialConnect && bluetoothDevice.get("status") === "disconnected") || bluetoothDevice.get("status") === "error");
+                  %>
+                  <div class="item-container touch-highlight deviceinfo-row status__item clear">
+                    <% if(tdIndex < truckDeviceLength - 1){ %>
+                      <div class="float-left"><button type="button" class="order-icon order-down order-device-button" data-dir="down" data-itemindex="<%= tdIndex %>"></button></div>
+                    <% }else{ %>
+                      <div class="float-left"><div class="order-icon order-down-template"></div></div>
+                    <% }/* end if not last element */ %>
+
+                    <div class="status-icon icon-<%= bluetoothDevice.get('status')%>"></div>
+
+                    <% if(reconnect){ %>
+                      <button class="button-reconnect"></button>
+                    <% }else{ %>
+                      <div class="button-reconnect-template"></div>
+                    <% }/*end if show reconnect button*/ %>
+
+                    <div class="device-name device" data-truckdeviceid="<%= truckDevice.get('id') %>"><%= truckDevice.get("name") %></div>
+                  </div><!--end deviceinfo-row-->
+                    <% truckDevice.get("truckWeightModel").get("truckAxles").each(function(axleModel, axleIndex){%>
+                      <%
+                        var truckAxleLength = truckDevice.get("truckWeightModel").get("truckAxles").length,
+                            alertWeight     = Number(axleModel.get("alertWeight")),
+                            warningWeight   = Number(axleModel.get("warningWeight")),
+                            axleWeight      = Number(axleModel.get("weight")),
+                            alertCssClass;
+                            
+                        // figure out alert status
+                        if(bluetoothDevice.get("status") !== "connected"){
+                          alertCssClass = "alert-off";
+                        }else if(alertWeight && axleWeight >= alertWeight){
+                          alertCssClass = "alert-error";
+                        }else if((warningWeight && axleWeight >= warningWeight) && (!alertWeight || axleWeight < alertWeight)){
+                          alertCssClass = "alert-warning";
+                        }else{
+                          alertCssClass = "alert-ok";
+                        }
+                      %>
+                      <div class="item-container touch-highlight axleinfo-row clear">
+                        <% if(axleIndex < truckAxleLength - 1){ %>
+                          <div class="float-left"><button type="button" class="order-down order-axle-button order-icon" data-dir="down" data-deviceindex="<%= tdIndex %>" data-itemindex="<%= axleIndex %>"></button></div>
+                        <% }else{ %>
+                          <div class="float-left"><div class="order-down-template order-icon"></div></div>
+                        <% }/* end if not last element */ %>
+
+                        <% if(alertWeight === "" || alertWeight === 0){ %>
+                            <div class="weight-alert"></div>
+                        <% }else{ %>
+                            <div class="weight-alert weight-alert-button <%= alertCssClass %>" data-axleid="<%= axleModel.get('id') %>" data-truckdeviceid="<%= truckDevice.get('id') %>"></div>
+                        <% } /*end if-else show alert icon or not */ %>
+
+
+
+                        <div class="axle-name" data-axleid="<%= axleModel.get('id') %>">
+                          <%= axleModel.get('name') %>
+                          <span class="float-right"><%= axleModel.getWeightString() %>
+                            <span class="disclaimer"><%= profileModel.get('unitMeasurement') %></span>
+                          </span>
+                        </div>
+                      </div><!--end axleinfo-row-->
+                    <% })/*--end truckAxle loop*/ %>
+                  <% })/*--end truckDevice loop*/ %>
+                  <div class="item-container touch-highlight totalweight-row clear">
+                    <% 
+                      var totalWeight   = Number(profileModel.getTotalWeight()),
+                          warningWeight = Number(profileModel.get("totalWeightWarning")),
+                          alertWeight   = Number(profileModel.get("totalWeightAlert")),
+                          totalWeightAlertCssClass;
+                  
+                      // figure out alert status
+                      if(!connected){
+                          totalWeightAlertCssClass = "alert-off";
+                      }else if(alertWeight && totalWeight >= alertWeight){
+                        totalWeightAlertCssClass = "alert-error";
+                      }else if((warningWeight && totalWeight >= warningWeight) && (!alertWeight || totalWeight < alertWeight)){
+                        totalWeightAlertCssClass = "alert-warning";
+                      }else{
+                        totalWeightAlertCssClass = "alert-ok";
+                      }
+                    %>
+                    <% if(alertWeight === "" || alertWeight === 0){ %>
+                      <div class="weight-alert"></div>
+                    <% }else{ %>
+                      <div class="weight-alert weight-alert-button <%= totalWeightAlertCssClass%>" data-axleid="0" data-truckdeviceid="0"></div>
+                    <% }/*--end if-else show alert or not */ %>
+
+                    <div class="total total-weight total-weight-button">
+                      Total Weight 
+                      <span class="float-right"><%= profileModel.getTotalWeightString() %>
+                        <span class="disclaimer"><%= profileModel.get('unitMeasurement') %></span>
+                      </span>
+                    </div>
+                  </div>
+                <div class="clear"></div>
+                <br /><br />
+              </div><!--end weight-breakdown-->
+            </div><!--end scroll pane contents-->
+          </section><!-- truck weight slide-->
+  
+          <section class="center slideview-container__slide">
+            <div class="close-dial"><button type="button" class="close-dial__button"></button></div>
+            <div class="center full"><h1 class="alert-title"></h1></div>
+            <div class="mask-dial" id="weight-dial">
+              <div class="mask-dial__dial"></div>
+      
+                <div class="dial-needle">
+                  <div class="dial-needle__container dial-rotate">
+                    <div class="dial-needle__needle"></div>
+                  </div>
+                </div>
+        
+                <div class="mask-dial__inset">
+                  <div class="mask-dial__text">
+                    <div class="important small-line-break weight-dial-text">0</div>
+                    <div class="disclaimer-upper unit-measurement-container">
+                      <span class="weight-dial-measurement-text">Configuring Dial</span>
+                    </div>
+                  </div><!-- end mask dial text-->
+                </div><!-- end mask dial inset -->
+        
+              </div><!-- end mask dial dial-->
+            </div><!--end mask dial -->
+          </section><!--end alert view slide-->
+        </div><!--end slideview container-->
+      </div><!--end slideview-->
+      <% }/* end if-else initalSetup*/ %>
+    </script>
+    
+    <script type="text/template" id="tmplStatusConnection">
+      <div class="modal-content">
+        <h1 class="center full">Connection Status</h1>
+        <br />
+        <div class="center full status-container">
+        <% truckDevices.each(function(truckDevice){ %>
+          <% var bluetoothDevice = truckDevice.get("bluetoothDeviceModel"); %>
+          <div class="status__item">
+            <div class="device"><%= bluetoothDevice.get("address") %></div>
+            <div class="status-icon icon-<%= bluetoothDevice.get('status')%>"></div>
+          </div>
+        <% });/* end foreach truckDevice */%>
+        </div><!--end status-container-->
+        
+        <div class="config-window__footer center full">
+          <div class="nav-button-bar full">
+            <button class="full button-next" data-action="close">Ok</button>
+          </div>
+        </div>
+      </div><!--end modal-content-->
+    </script>
+    
+    <script type="text/template" id="tmplInitialSetup">
+      <div class="modal-content config-window">
+        <div class='config-window__content'>
+          <div class="subview-element"></div>
+        </div>
+
+        <div class='config-window__footer center full'>
+          <div class='nav-button-bar full'>
+            <button class="half button-back" data-action="back" <%= navigation.backAttrs %>>Back</button>
+            <button class="half button-next" data-action="next" <%= navigation.nextAttrs %>>Next</button> 
+          </div>
+        </div>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplSettings">
+      <div class="modal-content">
+        <h1 class="center full">Profile</h1>
+        <ul class="button-bar-vertical tmpl-nav center">
+          <li class="button-bar__item"><button class="topcoat-button--cta " data-view="editProfile">Edit Profile</button></li>
+        </ul>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplInitialSetupOutline">
+      <div class="modal-content">
+        <div class='header full center'>
+          <div class='header-group'>
+            <h1>Lets get started</h1>
+            <h3 class="subheading">Just follow the simple steps below.</h3>
+          </div>
+        </div>
+        <br />
+        <div class="step-guide">
+          <div class="step">
+            <div class="step__label center">
+              <div class="circle">1</div>
+            </div>
+            <div class="step__details">
+              <div class='font-large'>Step one</div>
+              <div class='font-small'>Make sure your bluetooth loadscale is installed.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__label center">
+              <div class="circle">2</div>
+            </div>
+            <div class="step__details">
+              <div class='font-large'>Step two</div>
+              <div class='font-small'>Pair with loadscale.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__label center">
+              <div class="circle">3</div>
+            </div>
+            <div class="step__details">
+              <div class='font-large'>Step three</div>
+              <div class='font-small'>Setup your truck configuration.</div>
+            </div>
+          </div>
+        </div><!--end step-guide-->  
+      </div><!-- end modal-content -->
+    </script>
+    
+    <script type="text/template" id="tmplInitialSetupInstallGuide">
+      <div class="modal-content">
+        <div class="center full header step-header">
+          <div class="step-icon">
+            <div class="circle">1</div>
+          </div>
+          <div class='header-group'>
+            <h1>Step one</h1>
+            <h3 class="subheading font-small">Installation</h3>
+          </div>
+        </div>
+        <br /><br />
+        <div class="full center"><img src="img/brochure.png" /></div>
+        <p class="center container">
+          Click here to review <a href="">this pdf</a> for specific step by step instructions.
+        </p>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplScanOutline">
+      <div class="modal-content">
+        <div class="center full header step-header">
+          <div class="step-icon">
+            <div class="circle">2</div>
+          </div>
+  
+          <div class='header-group'>
+            <h1>Step two</h1>
+            <p class="subheading font-small">Pair with your loadscale</p>
+          </div>
+        </div>
+        <br /><br /><br />
+        <div class="table full margin-center">
+        
+          <div class="table-cell">
+            <img src="img/icons/bluetooth.png" width="48" height="61" alt="Bluetooth Image" />
+          </div>
+          
+          <div class="table-cell">
+            Your phone must have Bluetooth enabled to connect and pair with the load scale.
+          </div>
+        </div><!--end table-->
+        <br />
+        <br />
+        <div class="center">
+          <button class="topcoat-button button-scan" type="button">Connect to load scales</button>
+        </div>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplScanSync">
+      <div class="modal-content config-window">
+        <% if(message){ %>
+          <div class="center full header modal-subview__header">
+            <div class='header-group'>
+              <h1 class="header__text"><%= message %></h1>
+            </div>
+          </div>
+        <% }/*end if waitingToDisconnect*/ %>
+        <div class="config-window__content">
+          <div class="subview-element"></div>
+        </div>
+
+        <div class="config-window__footer center full modal-content__footer">
+          <div class="nav-button-bar full">
+            <button class="half button-back" data-action="back" <%= navigation.backAttrs %>>Back</button>
+            <button class="half button-next" data-action="next" <%= navigation.nextAttrs %>>Next</button>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplScanList">
+      <div class="modal-subview">
+        <div class="center full header modal-subview__header">
+          <div class='header-group'>
+            <h1 class="header__text">Scanning for Devices</h1>
+          </div>
+        </div>
+        <div class="topcoat-list modal-subview__content center full scrollable">
+          <ul class="topcoat-list__container device-list">
+            <% foundDevices.each(function(device){ %>
+              <% 
+                var cachedDevice  = cachedTruckDevices.getTruckDeviceByBluetoothDevice(device),
+                    deviceName    = (cachedDevice) ? cachedDevice.get("name") : device.get("name"),
+                    defaultName   = (cachedDevice) ? device.get("name") : "",
+                    checkExtraCss = (cachedDevice) ? "address-checkmark" : "";
+              %>
+              
+              <li class="topcoat-list__item selectable" data-address="<%= device.get('address') %>" data-name="<%= device.get('name') %>"><%= deviceName %> <span class="highlight-checkmark float-right <%= checkExtraCss %>" style="display: none"><img src="img/icons/checkmark.png" height="25"/></span><span class="mac-address"><%= defaultName %></span></li> 
+            <% }); /* end foreach found device */ %>
+            
+            <% if(foundDevices.length === 0 && firstRun === false) { %>
+              <li class="topcoat-list__item">No Devices Found</li>
+            <% } /* End if no devices found */ %>
+          </ul>
+        </div>
+      </div>
+    </script>
+    
+    <script type="text/template" id="tmplSyncData">
+      <%
+        var headerTitle = (completedSync) ? "Sync Completed" : "Syncing Data";
+        
+        if(deviceErrors.length > 0){
+          headerTitle = "Sync Error";
+        }
+      %>
+      <div class="modal-subview">
+        <div class="center full header modal-subview__header">
+          <div class='header-group'>
+            <h1 class="header__text"><%= headerTitle %></h1>
+          </div>
+        </div>
+        <div class="modal-subview__content scrollable">
+          <div class="center full status-container">
+            <% truckDevices.each(function(truckDevice){ %>
+            <% var bluetoothDevice = truckDevice.get("bluetoothDeviceModel"),
+                   truckWeight = truckDevice.get("truckWeightModel"),
+                   deviceInError = deviceErrors.findWhere({
+                     address: bluetoothDevice.get("address")
+                   });
+            %>
+            <div class="status__item">
+              <div class="device"><%= truckDevice.get("name") %></div>
+              <% if(deviceInError && completedSync){ %>
+                <div class="status-icon icon-status-error"></div>
+              <% }else if(completedSync){ %>
+                <div class="status-icon icon-status-completed"></div>
+              <% }else{ %>
+                <div class="status-icon icon-loading"></div>
+              <% } /*end if completed cycle or not*/ %>
+            </div>
+            <div class="clear device-data container">
+              <% if(deviceInError){ %>
+                <div>Failed to connect to device.</div>
+              <% }else if(inSyncCycle){ %>
+                <div>Waiting for data response...</div>
+              <% }else{/*device connected*/ %>
+                <div class="lowprofile">Firmware v<%= truckDevice.get("firmwareVersion") %></div>
+                <div>Found <%= truckWeight.get("truckAxles").length %> Readable Axles:</div>
+                <ul class="list">
+                  <% truckWeight.get("truckAxles").each(function(truckAxle){ %>
+                    <li><%= truckAxle.get("name") %></li>
+                  <%});/* end foreach truckAxle*/ %>
+                </ul>
+              <% }/*--end if device connected or not*/ %>
+            </div>
+          <% });/* end foreach truckDevice */%>
+          </div><!--end status container-->
+
+          <% if(deviceErrors.length > 0 && completedSync){ %>
+            <br /><br />
+            <div class="center">
+              <button class="topcoat-button resync-button">Resync</button>
+            </div>
+          <% } /*end if sync error*/ %>
+        </div><!--end modal subview content-->
+      </div><!--end modal content-->
+    </script>
+    
+    <script type="text/template" id="tmplProfileCreateForm">
+      <div class="modal-subview">
+       <div class="center full header step-header modal-subview__header">
+          <div class="step-icon">
+            <div class="circle">3</div>
+          </div>
+  
+          <div class='header-group'>
+            <h1>Step three</h1>
+            <h3 class="subheading font-small">Setup Truck Profile</h3>
+          </div>
+        </div><!--end modal subview header-->
+        
+        <div class="modal-subview__content scrollable">
+          <div class="lowprofile center small-break">App <%= APP_VERSION %></div>
+          <form class="form-truck-profile" action="#" method="POST" name="form-truck-profile">
+            <div class="form-group">
+              <!--<label for="name">Profile Name</label>-->
+              <input type="text" name="name" class="topcoat-text-input required" placeholder="Profile Name" />
+            </div>
+            <div class="form-group">
+              <label for="img">Please select the image that bests represents your configuration.</label>
+              <button class="topcoat-button nav-button" type="button" data-action="config-image">Image Representation</button>
+            </div>
+            <div class="form-group">
+              <label class="topcoat-switch weight-switch margin-center">
+                <% if(profileModel.get("unitMeasurement") === "lbs"){ %>
+                  <input type="checkbox" class="topcoat-switch__input" name="unitMeasurement" />
+                <% }else{ %>
+                  <input type="checkbox" class="topcoat-switch__input" name="unitMeasurement" checked />
+                <% }/*--end if-else lbs or kg*/ %>
+                <div class="topcoat-switch__toggle"></div>
+              </label>
+            </div>
+          </form>
+        </div><!--end model subview content-->
+      </div><!--end modal subview -->
+    </script>
+    
+    <script type="text/template" id="tmplProfileEditForm">
+      <div class="modal-content">
+       <div class="center full header step-header modal-content__header">
+          <div class="step-icon">
+            <div class="header-icon"><img src="img/icons/settings.png" alt="Settings Icon"/></div>
+          </div>
+  
+          <div class='header-group'>
+            <h1>Edit Profile</h1>
+            <h3 class="subheading font-small">Edit Name and Devices</h3>
+          </div>
+        </div>
+        <div class="modal-content__content scrollable">
+          <div class="lowprofile center small-break">App <%= APP_VERSION %></div>
+          <form class="form-truck-profile" action="#" method="POST" name="form-truck-profile">
+            <div class="form-group">
+              <!--<label for="name">Profile Name</label>-->
+              <input type="text" name="name" class="topcoat-text-input required" placeholder="Profile Name" value='<%= profileModel.get("name") %>' />
+            </div>
+            <div class="form-group">
+              <button class="topcoat-button nav-button" type="button" data-action="select-devices">Devices</button>
+            </div>
+            <div class="form-group">
+              <button class="topcoat-button nav-button" type="button" data-action="config-image">Image Representation</button>
+            </div>
+            <div class="form-group">
+              <label class="topcoat-switch weight-switch margin-center">
+                <% if(profileModel.get("unitMeasurement") === "lbs"){ %>
+                  <input type="checkbox" class="topcoat-switch__input" name="unitMeasurement" />
+                <% }else{ %>
+                  <input type="checkbox" class="topcoat-switch__input" name="unitMeasurement" checked />
+                <% }/*--end if-else lbs or kg*/ %>
+                <div class="topcoat-switch__toggle"></div>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <button class="topcoat-button--cta red nav-button" type="button" data-action="delete-profile">Delete Profile</button>
+            </div>
+          </form>
+        </div><!--end scroller-->
+        <div class='config-window__footer center full modal-content__footer'>
+          <div class="nav-button-bar full">
+            <button class="half nav-button button-cancel" type="button" data-action="cancel">Cancel</button>
+            <button class="half nav-button button-save" type="button" data-action="save">Save</button>
+          </div>
+        </div><!--end footer -->
+      </div><!--end modal content -->
+    </script>
+    
+    <script type="text/template" id="tmplSend">
+      <div class="modal-content">
+        <div class="center full header modal-content__header">
+          <div class='header-group'>
+            <h1>Share your data</h1>
+            <h3 class="subheading">send to any email account</h3>
+          </div>
+        </div>
+        <div class="center sendEmailGroup modal-content__content scrollable">
+          <br /><br /><br />
+          <img id="sendEmailImage" src="img/icons/email.png" alt="Email Image" />
+          <br /><br />
+          <input id="send-email-address" class="topcoat-text-input required" type="text" placeholder="Enter email address" />
+        </div>
+
+        <div class='config-window__footer center full modal-content__footer'>
+          <div class='nav-button-bar full'>
+            <button class="half nav-button button-cancel" data-action="cancel">Cancel</button>
+            <button class="half nav-button button-save" data-action="send">Send</button> 
+          </div>
+        </div>
+      </div>
+    </script>   
+
+    <script type="text/template" id="tmplTruckAxleConfig">
+      <div class="modal-content">
+       <div class="center full header step-header modal-content__header">
+          <div class='header-group'>
+            <h1>Edit Axle Name</h1>
+          </div>
+        </div>
+        <div class="modal-content__content scrollable">
+          <form class="form-truck-config" action="#" method="POST" name="form-truck-config">
+            <div class="form-group" id="axle-input-form">
+              <label for="name">Axle Name</label>
+              <input type="text" id="name" name="name" class="topcoat-text-input required" placeholder="Axle Name" value="<%= axleModel.get('name') %>" />
+            </div>
+            <div class="form-group alert-weight-formgroup">
+              <label for="alertWeight">Alert Weight Value</label>
+              <input type="text" name="alertWeight" id="alertWeight" class="topcoat-text-input" placeholder="(ex. 2500)" value="<%= axleModel.get('alertWeight') %>" />
+            </div>
+            <div class="form-group">
+              <label for="warningWeight">Warning Weight Value (warning must be less than alert)</label>
+              <input type="text" name="warningWeight" id="warningWeight" class="topcoat-text-input" placeholder="(ex. 1500)" value="<%= axleModel.get('warningWeight') %>" />
+            </div>
+          </form>
+        </div>
+        <div class='config-window__footer center full modal-content__footer'>
+          <div class='nav-button-bar form-button-bar full'>
+            <button class="half button-cancel" data-action="cancel">Cancel</button>
+            <button class="half button-save" data-action="save">Save</button> 
+          </div>
+        </div>
+      </div>
+    </script> 
+    
+    <script type="text/template" id="tmplTruckTotalWeightConfig">
+      <div class="modal-content">
+       <div class="center full header step-header modal-content__header">
+          <div class='header-group'>
+            <h1>Truck Total Weight Alert</h1>
+          </div>
+        </div>
+        <div class="modal-content__content scrollable">
+          <form class="form-truck-config" action="#" method="POST" name="form-truck-config">
+            <div class="form-group">
+              <label for="alertWeight">Truck Total Weight Value</label>
+              <input type="text" name="alertWeight" id="alertWeight" class="topcoat-text-input" placeholder="(ex. 25000)" value="<%= profileModel.get('totalWeightAlert') %>" />
+            </div>
+            <div class="form-group">
+              <label for="warningWeight">Warning Weight Value (warning must be less than alert)</label>
+              <input type="text" name="warningWeight" id="warningWeight" class="topcoat-text-input" placeholder="(ex. 15000)" value="<%= profileModel.get('totalWeightWarning') %>" />
+            </div>
+          </form>
+        </div>
+        <div class='config-window__footer center full modal-content__footer'>
+          <div class='nav-button-bar form-button-bar full'>
+            <button class="half button-cancel" data-action="cancel">Cancel</button>
+            <button class="half button-save" data-action="save">Save</button> 
+          </div>
+        </div>
+      </div>
+    </script> 
+    
+    <script type="text/template" id="tmplTruckDeviceEditName">
+      <div class="modal-content">
+        <div class="center full header step-header modal-content__header">
+          <div class="header-group">
+            <h1>Edit Device Name</h1>
+            <div class="lowprofile">Device Firmware v<%= truckDeviceModel.get("firmwareVersion") %></div>
+            <div class="lowprofile">Device Name <%=truckDeviceModel.get('bluetoothDeviceModel').get('name') %></div>
+          </div>
+        </div><!--end header-->
+        <div class="modal-content__content scrollable">
+          <form class="formedit-device-name">
+            <div class="form-group">
+              <input type="text" class="topcoat-text-input required" name="truckdevice:name" placeholder="Device Name" value="<%= truckDeviceModel.get('name') %>" />
+            </div>
+          </form>
+        </div>
+        <div class='config-window__footer center full modal-content__footer'>
+          <div class='nav-button-bar full'>
+            <button class="half button-cancel" data-action="cancel">Cancel</button>
+            <button class="half button-save" data-action="save">Save</button> 
+          </div>
+        </div>
+      </div><!--end modal-content-->
+    </script>
+    
+    <script type="text/template" id="tmplTruckConfigImage">
+      <div class="modal-content">
+        <div class="center full header step-header modal-content__header">
+          <div class="header-group">
+            <h1>Select Image Representation</h1>
+          </div>
+        </div><!--end header-->
+        
+        <div class="center full truck-config-list modal-content__content scrollable">
+          <br />
+          <ul class="list-plain">
+            <% for(var x = 0; x < availableTruckConfigImages.length; x+= 1){ %>
+              <% var configImage = availableTruckConfigImages[x]; %>
+              <li class="full truck-config-image"><img src="<%= configImage.imgSrc%>" height="35px" /></li>
+            <!--<li class="full truck-config-image"><img src="img/truck-configurations/three-axle.png" alt="three axle configuration image" height="35px" /></li>
+            <li class="full truck-config-image"><img src="img/truck-configurations/five-axle.png" alt="five axle configuration image" height="35px" /></li>-->
+            <% }/*--end foreach truckconfigimage*/ %>
+          </ul>
+        </div>
+
+        <div class="config-window__footer center full modal-content__footer">
+          <div class="nav-button-bar full">
+            <button class="full button-save" data-action="save">OK</button>
+          </div>
+        </div>
+      </div><!--end modal content-->
+    </script>
+    <!-- End Templates -->
+    
+    <!-- Begin Scripts -->
+    <script>
+        var APP_NAME = 'Right Weigh Bluetooth Application';
+  
+        // configure error handler
+        window.onerror = function(msg, url, linenumber){
+          //alert(APP_NAME + ' Error message: ' + msg + '\nURL: ' + url + '\nLine Number: ' + linenumber);
+          //alert("Error: " + msg);
+          console.log(APP_NAME + ' Error message: ' + msg + 'URL: ' + url + 'Line Number: ' + linenumber);
+          //console.log(APP_NAME + ' ' + arguments.callee.caller.toString());
+        };
+
+        window.showDebugMessage = function(msg){
+          console.log(APP_NAME + ' - ' + msg);
+          if(window.device !== undefined && window.device.platform === "iOS"){
+              //alert("DEBUG: " + ' - ' + msg);
+          }
+        };
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/lib/sherettewebs/js-native-extensions.js"></script>
+    <script src="js/lib/greensock/uncompressed/TimelineMax.js"></script>
+    <script src="js/lib/greensock/uncompressed/TweenMax.js"></script>
+    <script src="js/lib/greensock/uncompressed/plugins/ThrowPropsPlugin.js"></script>
+    <script src="js/lib/greensock/uncompressed/utils/Draggable.js"></script>
+    <!-- COMMENT OUT FOR MINIFIED VERSION
+    <script src="js/lib/require/require.js"></script>
+    <script src="js/main.js"></script>
+    -->
+    
+    
+    
+    <script src="js/application-build.min.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

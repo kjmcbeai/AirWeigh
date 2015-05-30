@@ -1,0 +1,23 @@
+.dial-container{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 254px;
+  height: 202px;
+  background-image: url('../../../../img/dial/dial-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dial-needle{
+  background-image: url('../../../../img/dial/dial-needle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 63px;
+  height: 41px;
+  transform-origin: 42.5px 50%;
+  right: 11px;
+  top: 125px;
+}

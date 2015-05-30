@@ -1,0 +1,474 @@
+.sw-plugin-modal-window{
+  background: -webkit-linear-gradient(#ffffff, #ffffff); /* For Safari */
+  background: -o-linear-gradient(#ffffff, #ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffffff, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #ffffff); /* Standard syntax */
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 2001;
+  /*margin-top: 2000px !important;*/ /* allows for animation up to start */
+}
+
+.sw-plugin-modal-window-close{
+  display: none !important; /* The app will not have a close button besides the modal mask */
+}
+.modal-content{
+  position: relative;
+  height: 100%;
+  font-family: 'Open Sans', arial;
+  font-weight: 300;
+}
+.modal-content .header{
+  padding: 1em 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+.modal-content .h1{
+  margin: 0;
+  padding: 0;
+}
+.modal-content{
+  height: 100%;
+}
+.modal-content__header{
+  height: 20% !important;
+  max-height: 20%;
+}
+.modal-content__content{
+  height: 65% !important;
+  max-height: 65%;
+}
+.modal-content__footer{
+  height: 15% !important;
+  max-height: 15%;
+}
+
+.modal-footer{
+  position: absolute;
+  bottom: 0;
+}
+
+.modal-off-start{
+
+  margin-top: 2000px !important;
+}
+
+
+/* IOS HAS ISSUES WITH THIS ANIMATION EFFECTING BUTTONS
+.modal-off{
+  margin-top: 2000px !important;
+    -webkit-transition: margin-top 1s ease-in-out;
+    -moz-transition: margin-top 1s ease-in-out;
+    -o-transition: margin-top 1s ease-in-out;
+    -ms-transition: margin-top 1s ease-in-out;    
+    transition: margin-top 1s ease-in-out;
+}
+
+.modal-on{
+  margin-top: 10px !important;
+  -webkit-transition: margin-top 1s ease-in-out;
+    -moz-transition: margin-top 1s ease-in-out;
+    -o-transition: margin-top 1s ease-in-out;
+    -ms-transition: margin-top 1s ease-in-out;    
+    transition: margin-top 1s ease-in-out;
+}
+*/
+
+
+
+.modal-content .header h1{
+  color: #333333;
+  font-size: 2em;
+  font-family: 'Open Sans', arial;
+  font-weight: 300;
+}
+
+.modal-content .header .subheading{
+  color: #666666;
+  font-size: .8em;
+  font-family: 'Open Sans', arial;
+  font-weight: 300;
+}
+
+/* Modal Window Footer */
+
+.config-window__footer{
+
+  background-color: #e6e6e6;
+  overflow: hidden;
+  /*
+  height: 15%;
+  width: 104%;
+  bottom: -20px;
+  left: -2%;
+  */
+  border-top: 1px solid #cccccc;
+  
+}
+
+.button-back, .button-cancel{
+  /*
+  position: absolute;
+  left: 2%;
+  */
+  
+  opacity: 1;
+  border: none;
+  background-color: #e6e6e6;
+  float: left;
+}
+
+.button-next, .button-save{
+  /*
+  position: absolute;
+  right: 2%;
+  */
+  
+  opacity: 1;
+  border: none;
+  float: right;
+}
+button.full{
+  width: 100%;
+  left: 0%;
+}
+
+
+/*  ---------------------------------------------------- MODAL WINDOW ---------------------------------------------------- */
+
+.sw-plugin-modal-window{
+  display: block;
+  position: fixed;
+  max-height: 5000px;
+  
+  border: 1px solid #424242;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 0px;
+  margin: 0px auto;
+  overflow: hidden;
+
+  width: 90%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);         /* Opera */
+  -ms-transform: translate(-50%, -50%);       /* IE 9 */
+  -moz-transform: translate(-50%, -50%);      /* Firefox */
+  -webkit-transform: translate(-50%, -50%);  /* Safari and Chrome */
+  top: 50%;
+  left: 50%;
+
+  background: -webkit-linear-gradient(#ffffff, #ffffff); /* For Safari */
+  background: -o-linear-gradient(#ffffff, #ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffffff, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #ffffff); /* Standard syntax */
+  background-color: #ffffff;
+  color: #000000;
+
+  z-index: 4001;
+}
+
+/*  ---------------------------------------------------- SW MODAL CONTENT ---------------------------------------------------- */
+
+.sw-plugin-modal-window-content{
+  overflow: auto;
+}
+
+/*  ---------------------------------------------------- MODAL CONTENT ---------------------------------------------------- */
+
+.modal-content{
+  position: relative;
+  height: 100%;
+  font-family: 'Open Sans', arial;
+  font-weight: 300;
+}
+.modal-content .header{
+  padding: 1em 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+.modal-content .h1{
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content .header h1{
+  color: #333333;
+  font-size: 1.5em;
+  font-family: 'Open Sans', arial;
+  font-weight: 300;
+}
+
+.modal-content .header .subheading{
+  color: #666666;
+  font-size: .8em;
+  font-family: 'Open Sans', arial;
+  font-weight: 300;
+}
+
+
+/*  ---------------------------------------------------- CONFIG WINDOW CONTENT---------------------------------------------------- */
+
+/* Div on same level as footer, contains sub view */
+
+.config-window__content{
+  height: 85%;
+}
+
+/*  ---------------------------------------------------- MODAL HEADER---------------------------------------------------- */
+
+
+.step-icon{
+
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.step__label .circle{
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  border: 2px solid black;
+  line-height: 1.25em;
+  font-size: 2em;
+  float: right;
+  margin-right: 10px;
+}
+.circle{
+  border: 2px solid black;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.step-header .circle{
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  border: 2px solid black;
+  line-height: 1.25em;
+  font-size: 1.75em;
+  position: absolute;
+  left: 7.5%;
+}
+
+.modal-content .header{
+  padding: 0em 0;
+  border-bottom: 1px solid #cdcdcd;
+  height: 20%;
+  
+}
+
+/* center header and subheader */
+.modal-content .header .header-group{
+  /* added by Brandon Sherette on 2014.12.2 - quick fix for my mobile device (it can't handle the way it was, it deals with how you have translate and the position) */
+  position: absolute;
+  top: 20%;
+  
+  /*
+  left:50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  */
+    width: 100%;
+}
+
+
+/*  ---------------------------------------------------- SUB VIEW ELEMENT ---------------------------------------------------- */
+
+.config-window__content .subview-element{
+  height: 100%;
+}
+
+.sendEmailGroup{
+
+  padding: 0 1em;
+}
+
+/*  ---------------------------------------------------- DEVICE BUTTONS ---------------------------------------------------- */
+
+.topcoat-list {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.topcoat-list__header {
+  padding: 4px 20px;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #3f4041;
+  color: #c6c8c8;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.topcoat-list__container {
+  border-top: 1px solid #ffffff;
+  color: #c6c8c8;
+}
+
+.topcoat-list{
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.topcoat-list__item{
+
+  color: #333333;
+  background-color: #efefef;
+}
+
+.topcoat-list__item {
+  padding: 0.9rem;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.topcoat-list__item:first-child {
+  /* border-top: 1px solid rgba(0,0,0,0.05); */
+}
+
+.highlight-box{
+  border: 1px solid white;
+  box-shadow: 0 0 10px #ffffff;
+  background-color: #cccccc !important;
+}
+
+.mac-address{
+  display: block;
+  font-size: .7em;
+}
+
+
+
+
+/*  ---------------------------------------------------- RESCAN BUTTON ---------------------------------------------------- */
+
+button.rescan{
+  font-size: .65em;
+  padding: 1em; 
+  margin: 1em auto;
+  height: auto; /* same height as header */
+  position: relative;
+  right: 0;
+  top:   0;
+  z-index: 2;
+}
+
+button.rescan:disabled{
+  cursor: default !important;
+  opacity: .5;
+}
+button.rescan:disabled:hover{
+  opacity: .5;
+  background-color: rgb(23, 59, 99);
+}
+
+.rescan-hidden{
+
+  display: none;
+}
+
+.scan-header{
+
+  cursor: pointer;
+}
+
+/*  ---------------------------------------------------- INPUT BOX ---------------------------------------------------- */
+
+.topcoat-text-input{
+
+  border: 1px solid #333434;
+}
+
+.topcoat-text-input:focus,
+.topcoat-text-input--large:focus {
+   border: 1px solid #333434;
+   box-shadow: 0 0 0 0px #333333;
+}
+
+/*  ---------------------------------------------------- CONFIG WINDOW FOOTER ---------------------------------------------------- */
+
+
+.config-window__footer .breadcrumb{
+  position: absolute;
+  bottom: 0;
+}
+
+.config-window__footer{
+  position: relative;
+  background-color: #e6e6e6;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #cccccc;
+    height: 15%;
+}
+
+.nav-button-bar{
+
+  width: 100%;
+  height: 100%;
+}
+
+.nav-button-bar button{
+
+  display: block;
+
+  width:50%;
+  height:100%;  
+  margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+
+}
+
+.nav-button-bar button.half{
+
+    margin-bottom: 0em;
+    width: 50%;
+    height:100%;
+}
+
+.nav-button-bar button.half{
+  
+}
+
+.button-hide{
+
+  border-right: 1px solid #e6e6e6 !important;
+}
+.button-back,
+.button-cancel,
+.button-next,
+.button-save{
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+/*  ---------------------------------------------------- BUTTON BACK ---------------------------------------------------- */
+
+
+
+.button-back, .button-cancel{
+
+  border-right: 1px solid #cccccc;
+}
+
+/*  ---------------------------------------------------- BUTTON NEXT ---------------------------------------------------- */
+
+
+
+.button-next, .button-save{
+  border-left: 1px solid #cccccc;
+}
+
+
+.modal-content .container{
+  padding: 5px;
+}

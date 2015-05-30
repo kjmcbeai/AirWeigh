@@ -1,0 +1,781 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: QQnRfdvMzHqjHhbP/mr6ncWJenE=
+Created-By: 1.7.0_21 (Oracle Corporation)
+SHA1-Digest-Manifest: DO3it3LPPgWZK2gEItnUvAnNLro=
+
+Name: assets/www/js/lib/sherettewebs/plugins/slider/SliderPlugin.js
+SHA1-Digest: qWnq/cce4/2doAnWhtH0ney04HI=
+
+Name: assets/www/js/lib/backbone/backbone.localStorage.js
+SHA1-Digest: tpr3uCZffnxjZa9pSSag8rkRA00=
+
+Name: res/xml/config.xml
+SHA1-Digest: 6jO6BBCxO2G3P7iKTECeR8aLC2E=
+
+Name: res/drawable-port-xhdpi-v4/screen.png
+SHA1-Digest: 4XoQpZ6H4SyNHdXQaquvqgvOWSk=
+
+Name: assets/www/img/truck-configurations/default.png
+SHA1-Digest: BmoZE/1pW6aWPa8TKMIf2ruy1tI=
+
+Name: assets/www/img/icons/light-combo-box-bg.png
+SHA1-Digest: xyXTFUISNIYrF2XyMg+g8yfpa0c=
+
+Name: assets/www/img/icons/icon-bluetooth-25.png
+SHA1-Digest: 6atLS8loAWCvgmb4QbCMaYYLB+Q=
+
+Name: assets/www/js/lib/sherettewebs/plugins/slideview/slideview.js
+SHA1-Digest: Gzon5RFPrnvcwQsfUuEaZPil19E=
+
+Name: assets/www/img/iPhone-Design3.jpg
+SHA1-Digest: +OJsJzbGRee8kS8k/UxZK/GGtCQ=
+
+Name: assets/www/img/icons/dark-combo-box-bg.png
+SHA1-Digest: IAXX09YGnLWIlidcDfDcEnVMTAM=
+
+Name: assets/www/img/icons/icon-disconnected.png
+SHA1-Digest: DGSz3tdKuXdURMUQUHjbsumJvl0=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/TEMPLATE_Plugin
+ .js
+SHA1-Digest: RGJ0TjhvegaPHx1Q8Oud3erFYew=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/EndArrayPlugin.
+ js
+SHA1-Digest: sRq4tJE2y8A+oNmziLiAGne7WiQ=
+
+Name: assets/www/img/icons/alert_warning.png
+SHA1-Digest: ppk+hDqVYUD3nUWk3RkKTtva5qU=
+
+Name: assets/www/js/lib/greensock/uncompressed/utils/Draggable.js
+SHA1-Digest: aqnIhzJr3El9pWIMYxd3vLhM2CI=
+
+Name: assets/www/img/dial/needle.png
+SHA1-Digest: 4U/9a4FakZOIe5LKeBOpUZzbIjI=
+
+Name: assets/www/js/views/truck/TruckDeviceEditNameView.js
+SHA1-Digest: rtYVGOBYxbrRYYfCdBX6YGw8EyA=
+
+Name: assets/www/js/lib/greensock/minified/plugins/TextPlugin.min.js
+SHA1-Digest: JiJuwmKdeO9axkDJZ1ByQfwOK5o=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ CoreDisconnect.js
+SHA1-Digest: q6lNHVCKxkAgT5VtBZpruD7B8c4=
+
+Name: assets/www/js/views/settings/SettingsView.js
+SHA1-Digest: z27x+E1taTDMYGmKQmgUuCgArJ4=
+
+Name: assets/www/js/views/truck/TruckAxleConfigView.js
+SHA1-Digest: HC3cfZUhXdsCQVwLi2YWYq7O6hg=
+
+Name: assets/www/img/icons/icon-status-error.png
+SHA1-Digest: utoODyJEueq13YRZGpZRO2AQAZc=
+
+Name: assets/www/plugins/org.apache.cordova.dialogs/www/notification.j
+ s
+SHA1-Digest: 8pcEjzLSBo6XBze+GNGBl5ZoG9k=
+
+Name: assets/www/img/icons/checkbox_checked_dark.png
+SHA1-Digest: jPm0nPNpc18g4ekCojpELVGuEDs=
+
+Name: assets/www/js/views/truck/TruckTotalWeightConfigView.js
+SHA1-Digest: XOY0xyJZVrCx/AXWZ7Da9l7UaSQ=
+
+Name: assets/www/js/collections/truck/TruckDeviceCollection.js
+SHA1-Digest: qavqjzQUvlF6Vj7YACf+qYzAGzU=
+
+Name: assets/www/js/views/send/SendView.js
+SHA1-Digest: xL4nAGaI0vrN0RlU7tB0IbGoG0Y=
+
+Name: assets/www/js/models/bluetooth/BluetoothScanModel.js
+SHA1-Digest: SbJIcMqjsugnIu+LUPHXusuXX5A=
+
+Name: assets/www/js/lib/sherettewebs/svariablecleaner.js
+SHA1-Digest: flURlP4PHDvBWZXUeUedGnkN+Yg=
+
+Name: assets/www/templates/scan-view.html
+SHA1-Digest: FkeYGaxKi9cwTxZSQr1nPTHYy9A=
+
+Name: assets/www/img/dial/dialCover.png
+SHA1-Digest: dgVHDBX0AM+j11F78x/7RtApQjM=
+
+Name: assets/www/img/background.png
+SHA1-Digest: 1Jiz5BUGUKze+3IG0VPB8oY8Ho0=
+
+Name: assets/www/img/truck-configurations/one-axle.png
+SHA1-Digest: AJNCN6OtgLnfWb8S8lK11TjcZhQ=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/ScrollToPlugin.
+ js
+SHA1-Digest: JRF4QSYlbA43nEmNAI0LyM4a1Yg=
+
+Name: assets/www/js/collections/bluetooth/BluetoothDeviceCollection.js
+SHA1-Digest: DaIBosM4hptkGAyexo8BURZmTBw=
+
+Name: assets/www/cordova.js
+SHA1-Digest: 5EkrRnAMosyQKB7TZp1O+3TRSvk=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/CSSRulePlugin.j
+ s
+SHA1-Digest: vP8fsZEcQ0I6I88MrsOy5Vxu7Lc=
+
+Name: res/drawable/screen.png
+SHA1-Digest: BMGHN5XMvXnQ5pQC9yZRDpmgqqI=
+
+Name: assets/www/css/modal-window.css
+SHA1-Digest: OukVeQxZJNoyMlRaJAl7ufcz9o8=
+
+Name: assets/www/img/icons/bluetooth.png
+SHA1-Digest: /+1dHsh7PM1pY8DfEeTqlPfwPRw=
+
+Name: assets/www/js/lib/sherettewebs/models/ErrorModel.js
+SHA1-Digest: YflLG9qa1bM91VHjuN1QSKcy7Hc=
+
+Name: assets/www/js/lib/underscore/underscore-min.map
+SHA1-Digest: lICtY0arDbyKpsDFGZfKE/MSztg=
+
+Name: assets/www/js/AppController.js
+SHA1-Digest: gf1EJESJ8sD+JDhOqa4sdog9qTM=
+
+Name: assets/www/js/lib/greensock/minified/plugins/RaphaelPlugin.min.j
+ s
+SHA1-Digest: buiIz3uxeeTToE1LjKY/c4HdaLE=
+
+Name: assets/www/img/icons/icon-connected.png
+SHA1-Digest: tGoFGSrPrLy2T8GuRngSEz5vkww=
+
+Name: assets/www/img/icons/icon-send.png
+SHA1-Digest: yoMqTTlGF1ltdJummDXwJLFVavY=
+
+Name: assets/www/img/icons/alert_overweight.png
+SHA1-Digest: eoaveN4mMH8sebX686JlL7p22fY=
+
+Name: assets/www/js/views/profile/ProfileCreateFormView.js
+SHA1-Digest: tv8wB6RdERSqYqRt/VC2MWPU+kU=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/RaphaelPlugin.j
+ s
+SHA1-Digest: RYoe+697YbdQwMJ3S8ikdfoLSJ4=
+
+Name: assets/www/js/lib/greensock/uncompressed/TimelineMax.js
+SHA1-Digest: M3Rvdv5fAX+JKNDblP8XviECe8g=
+
+Name: assets/www/js/collections/bluetooth/BluetoothDeviceErrorCollecti
+ on.js
+SHA1-Digest: XPYg97rZ2JWSPLxyL/VWIDmLH98=
+
+Name: assets/www/css/sherettewebs/plugins/modal-window/modal-window.cs
+ s
+SHA1-Digest: eHYj5Z1wBmI1OIAbVDscZLBV7Ck=
+
+Name: assets/www/templates/readme.md
+SHA1-Digest: P42quMa3NGw+4WUsHVpGq2FsXhM=
+
+Name: assets/www/plugins/de.appplant.cordova.plugin.email-composer/www
+ /email_composer.js
+SHA1-Digest: NgDP+xbDRD7wWKHA16nQNnEBPBo=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ AndroidDiscoverServices.js
+SHA1-Digest: g5HbMsOj0tZlOqlAhl/rptMbkfw=
+
+Name: assets/www/js/lib/greensock/minified/plugins/ColorPropsPlugin.mi
+ n.js
+SHA1-Digest: i8JtRxTraazDrjkDni74yKX5QTI=
+
+Name: assets/www/img/dial/dialBackground.png
+SHA1-Digest: FBlGGXQBrv4WEaKXJLbyKyoDATM=
+
+Name: assets/www/js/lib/greensock/minified/plugins/AttrPlugin.min.js
+SHA1-Digest: BlfHEDTgTfMPX8Dd2M1FDVEcJCA=
+
+Name: assets/www/cordova_plugins.js
+SHA1-Digest: e5mQuUFPCZnP4bcHgLYDJhrcC4g=
+
+Name: assets/www/css/sherettewebs/plugins/slider/slider.css
+SHA1-Digest: Tq14PZjSSfG7Lv8NQ1ic+RGylQU=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ CoreRead.js
+SHA1-Digest: dkSD09prUsdMkNrQ208h4hIKqLQ=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ Android.js
+SHA1-Digest: H8cRtmM/Mdhp2fBjo7JOX7zFXDA=
+
+Name: assets/www/js/models/truck/TruckWeightModel.js
+SHA1-Digest: ZiI4VkamGlpw09YK7L3QVPKBVs0=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ Core.js
+SHA1-Digest: 9sHKy8HbI+WLIgtUmfYXJ6eauJk=
+
+Name: assets/www/js/lib/greensock/minified/plugins/EndArrayPlugin.min.
+ js
+SHA1-Digest: qD+GcUhcEn9gOcbZSeIl4+SBegI=
+
+Name: assets/www/js/lib/require/require-old.js
+SHA1-Digest: DRfFSA2Z0r4s4O3iqv4bQAdD/yg=
+
+Name: assets/www/img/icons/checkbox_unchecked_dark.png
+SHA1-Digest: 4FS6Qixe4+klvOMTyh6PhfCxZN8=
+
+Name: assets/www/js/application-build.min.js
+SHA1-Digest: /MEdyfo7JWbGiQVcvL1Q7ua53+w=
+
+Name: assets/www/img/brochure.png
+SHA1-Digest: SeOMbv+4dXbfcXfedvCvNk3GEwA=
+
+Name: assets/www/css/app.css
+SHA1-Digest: H12y5SLN9GAMXmUoASBklXcE3E8=
+
+Name: assets/www/readme.md
+SHA1-Digest: XUhJg+C0cQBtB7suzxgZUYZjG+w=
+
+Name: assets/www/js/lib/greensock/minified/TweenLite.min.js
+SHA1-Digest: Lpcj3Ucn0nNtpY1uqfRaEsaewaI=
+
+Name: assets/www/js/models/bluetooth/BluetoothDeviceModel.js
+SHA1-Digest: aumdM0dea7jJX1IGmN5ZkNlyaz0=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/CSSPlugin.js
+SHA1-Digest: zhLPCt5P7QRlzQAmOQwAil1DYh0=
+
+Name: assets/www/js/AppBluetoothController.js
+SHA1-Digest: WIoTScVb5cm/vjezNMi0h1NeHGk=
+
+Name: assets/www/js/lib/sherettewebs/sw.event.js
+SHA1-Digest: 5CxxenpyiKMOXa1y3wLgCbisxbs=
+
+Name: assets/www/img/truck-configurations/two-axle-front.png
+SHA1-Digest: fN+UXCvW0j4hq2KF3+xD5Y1OlT8=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ Abstract.js
+SHA1-Digest: NYJs7XmbXfa7lY3GEYvV4zw7sC4=
+
+Name: assets/www/img/truck-configurations/old/five-axle.png
+SHA1-Digest: HBncT33VSCBmI4ftHV5N2r/OPR4=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothFactor
+ y.js
+SHA1-Digest: /HOJoSyQgzQZEIUCu9gog6261O0=
+
+Name: assets/www/js/views/scan/ScanSyncView.js
+SHA1-Digest: ZUfBN7ldWXE3nqoiDQV5Ntiqrh0=
+
+Name: assets/www/img/divider.png
+SHA1-Digest: 1rsQsT5ePX6NksPZK0DfPiTUQEs=
+
+Name: assets/www/plugins/org.apache.cordova.splashscreen/www/splashscr
+ een.js
+SHA1-Digest: 9G4prLJMG9Hiv4uiH+eIh8C/vF8=
+
+Name: assets/www/img/truck-configurations/old/three-axle.png
+SHA1-Digest: mXnR4H8bjzPt2nnqsnOCRhLnlx8=
+
+Name: assets/www/img/icons/icon-reconnect.png
+SHA1-Digest: uiAo+dNdAyf0EXAQJ6iHYrWQxiM=
+
+Name: assets/www/js/lib/greensock/minified/plugins/EaselPlugin.min.js
+SHA1-Digest: bDOo30m8JBcEJNQlhvSSBaF30h4=
+
+Name: assets/www/js/lib/greensock/minified/TimelineMax.min.js
+SHA1-Digest: tHbRZHX4RrIPiHsnxQCztiEi2KQ=
+
+Name: assets/www/img/icons/checkmark.png
+SHA1-Digest: d7eYeUNkCuQ0ptzu0q3nGIoyUYc=
+
+Name: assets/www/img/icons/breadcrumb.png
+SHA1-Digest: fGO7yXxpDRreCmBTKeIRAsrtOqw=
+
+Name: assets/www/img/icons/iconSettings.png
+SHA1-Digest: 330VffOKAVIkczwrMfhEGrh4V3g=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/ThrowPropsPlugi
+ n.js
+SHA1-Digest: mbAj3T0FsKWdLOib/0baR/GBYdc=
+
+Name: assets/www/js/lib/greensock/minified/plugins/RoundPropsPlugin.mi
+ n.js
+SHA1-Digest: Bb1ubvrKZm42/zj6nA1tFJ1TFFw=
+
+Name: assets/www/img/truck-configurations/old/one-axle.png
+SHA1-Digest: 5x98T9aRJ4JvisBLi4YT2BV617I=
+
+Name: assets/www/js/AppUtil.js
+SHA1-Digest: Xdx2mr58SsX6L+8Ff9WFk+JhKYA=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/DirectionalRota
+ tionPlugin.js
+SHA1-Digest: PlrNYM7oKudXvCCLcdA6wZeWSQA=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ CoreIsConnected.js
+SHA1-Digest: 8EvfpzTMw/YmyAB7AH6VrYxH06A=
+
+Name: assets/www/js/views/footer/FooterView.js
+SHA1-Digest: JyoayZc5oR6YR3KX9YEozhZaWmI=
+
+Name: assets/www/css/sherettewebs/mobile-mockup.css
+SHA1-Digest: s1s0FC4eeH4xoP+/x2y58QmTiGM=
+
+Name: assets/www/js/lib/greensock/minified/plugins/KineticPlugin.min.j
+ s
+SHA1-Digest: YWIc3aVuz1q28YPqdSQU8rdrDgA=
+
+Name: assets/www/js/views/header/HeaderView.js
+SHA1-Digest: lPqBxMTPt2DSnzn19nesID5yaIs=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ Util.js
+SHA1-Digest: yxtseRDtFwKB81+IFf/jAqpDEqs=
+
+Name: assets/www/css/sherettewebs/plugins/dial/mask-dial.css
+SHA1-Digest: csIYpl4sRTtniUoM5VYu6wsEl28=
+
+Name: assets/www/js/lib/greensock/uncompressed/jquery.gsap.js
+SHA1-Digest: t+G4HFJdru/uUrz3A+/N6DeCJ+A=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ CoreScan.js
+SHA1-Digest: HVKC0fM9kTi39/etf1CayatoH5c=
+
+Name: assets/www/js/lib/greensock/minified/plugins/CSSPlugin.min.js
+SHA1-Digest: akl/gRIDTYyahmGdBfgCW/MPuvs=
+
+Name: assets/www/js/lib/sherettewebs/js-native-extensions.js
+SHA1-Digest: E2nMI/Y7aMbHL++kr0xhpJ5SZ5E=
+
+Name: assets/www/img/icons/pop-up-triangle-dark.png
+SHA1-Digest: 1/bbYb2ANZEPxNAbcMLPRjx94+c=
+
+Name: assets/www/img/icons/arrow.png
+SHA1-Digest: On0UZAn0/gFc7PEGcXT5TA/lkkk=
+
+Name: assets/www/js/lib/greensock/minified/jquery.gsap.min.js
+SHA1-Digest: 0RcSkbvloQpOFERcSRS4rivEpvM=
+
+Name: assets/www/js/lib/sherettewebs/plugins/dial/DialPlugin.js
+SHA1-Digest: IH9h1wp8NQ/yPQwA3Pop/xEwBP8=
+
+Name: assets/www/js/views/initial-setup/InitialSetupInstallGuideView.j
+ s
+SHA1-Digest: TUILjCbEe4tXCf4z85NezLnqQaU=
+
+Name: assets/www/js/lib/greensock/uncompressed/TimelineLite.js
+SHA1-Digest: OkCcH/3qLPGkJUJvwhqTxbRdxMc=
+
+Name: assets/www/img/icons/icon-error.png
+SHA1-Digest: bChB21CPs+kzZFwkQomRGGhfXaE=
+
+Name: assets/www/img/icons/drop-down-triangle.png
+SHA1-Digest: qW+Uyyv/sCjz+Q2Xhka71LVcFC4=
+
+Name: assets/www/js/views/profile/ProfileEditFormView.js
+SHA1-Digest: D/Gyrkm4WEjpuNauYJi5iKRi7LE=
+
+Name: assets/www/css/topcoat/topcoat-desktop-light.css
+SHA1-Digest: oi7sTp0HGSn9ZbVWoRq4L5hxM8Q=
+
+Name: assets/www/img/truck-configurations/old/two-axle-front.png
+SHA1-Digest: oPXUVdl9Y66oHdgRpVudz3o47ZE=
+
+Name: assets/www/js/views/scan/ScanOutlineView.js
+SHA1-Digest: gstM9ZRpM9IBd20TPHz6v/GoVYw=
+
+Name: assets/www/img/navbar.png
+SHA1-Digest: tlavwpxp4Gc4XZtbAm5xu302IiQ=
+
+Name: assets/www/js/AppEvents.js
+SHA1-Digest: oFgaVCWNTwHlf3lawou7uW09S5o=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ CoreIsEnabled.js
+SHA1-Digest: T03nTkD8O5Q+jiNuQ60ol9j7SRY=
+
+Name: assets/www/js/models/truck/TruckAxleModel.js
+SHA1-Digest: 0Pf8gSXzPlKleJinHXIJ5tLpYMQ=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ IOS.js
+SHA1-Digest: lSXo54lj6edzHJ/nlYR4t9Z9qAw=
+
+Name: assets/www/img/truck-configurations/two-axle-back.png
+SHA1-Digest: eXpAUXsXkd66prH4zUNq3pqjypY=
+
+Name: assets/www/js/lib/greensock/uncompressed/TweenMax.js
+SHA1-Digest: 7MMiqNx7TElhMGAEAnb4uKx4fp0=
+
+Name: assets/www/img/icons/spinner.png
+SHA1-Digest: b6FaFXPDAHmkhoCnOGGITIHPULs=
+
+Name: assets/www/img/truck-configurations/old/one-axle-b.png
+SHA1-Digest: Xsz5QT9MI7TARlIOYK5IF/px4+k=
+
+Name: assets/www/js/views/initial-setup/InitialSetupView.js
+SHA1-Digest: ldxpR9T5+I//krZ43psCRU/REpI=
+
+Name: assets/www/css/app-mobile.css
+SHA1-Digest: d/5jz4NTtlua/U9KrtFcuPqI0T0=
+
+Name: assets/www/js/lib/backbone/backbone-min-old.js
+SHA1-Digest: 0WjB559CoggmlPGj2Mn1vRuu+5Q=
+
+Name: assets/www/js/lib/sherettewebs/index.html
+SHA1-Digest: nUaBjZ94VBKukV86xDhzfaC1o64=
+
+Name: assets/www/plugins/org.apache.cordova.dialogs/www/android/notifi
+ cation.js
+SHA1-Digest: FJL/j7EYcTvFLNBJleffetyuyIw=
+
+Name: assets/www/js/router.js
+SHA1-Digest: MRwRZW3A45M5WpE/5AAJsRfKHsQ=
+
+Name: assets/www/css/topcoat/topcoat-mobile-dark.css
+SHA1-Digest: ikO/O+idZ/6rjryf0AaCoTu9ABQ=
+
+Name: assets/www/img/icons/alert_off.png
+SHA1-Digest: 8YlvGynak1EjOQHsdaX+3Rvv0F8=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/KineticPlugin.j
+ s
+SHA1-Digest: 6nAgrZFtVfrKIiLNoAt8o7LkIo4=
+
+Name: assets/www/js/lib/sherettewebs/sherettewebs.js
+SHA1-Digest: Wpp2OgIT45SPDVfa+RSNbnoVjnk=
+
+Name: assets/www/img/icons/spinner2x.png
+SHA1-Digest: 1ljw3T3oFeu4RVDTIb6bRKsdhpY=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/TextPlugin.js
+SHA1-Digest: 7KC/3zfzHCpYi4MXGImxuYn6GHY=
+
+Name: assets/www/img/truck-configurations/five-axle.png
+SHA1-Digest: qP5FG55O8Pvjsix230b+bt9xZ7Y=
+
+Name: assets/_where-is-www.txt
+SHA1-Digest: XyoRHUmqQWhFqkB6tnerFbQr+4I=
+
+Name: assets/www/js/views/initial-setup/InitialSetupOutlineView.js
+SHA1-Digest: /NGiWwG+wTNB5w2P2dryAEn9FOo=
+
+Name: assets/www/img/truck-configurations/old/four-axle.png
+SHA1-Digest: 92Ap5qkBc1fCatfM9hzlUfZwe5Q=
+
+Name: assets/www/js/lib/underscore/underscore-min.js
+SHA1-Digest: gpIHOqU64ufLSwIpDSnesEYm1nY=
+
+Name: res/drawable-port-hdpi-v4/screen.png
+SHA1-Digest: /vMlhuswkn0uRw0ZTqyoeCP+myU=
+
+Name: assets/www/plugins/org.apache.cordova.device/www/device.js
+SHA1-Digest: 0YrVqSDx33y2AP1BNToQK9LLn9g=
+
+Name: assets/www/img/icons/refresh.png
+SHA1-Digest: SieLj0TdZGgRbsoai1Rpq/ZQv5g=
+
+Name: assets/www/img/truck-configurations/one-axle-b.png
+SHA1-Digest: pfsTOe/83xpoQ41O8/xTPPLCtnk=
+
+Name: assets/www/css/sherettewebs/plugins/slideview/slideview.css
+SHA1-Digest: 7MX6VOHHqMyl/Ymis6Ud/9LmmAE=
+
+Name: assets/www/js/lib/greensock/minified/utils/Draggable.min.js
+SHA1-Digest: 92ZDYDkyMDXEyDyY4Yy/794OzNc=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/ColorPropsPlugi
+ n.js
+SHA1-Digest: 9j/64vDo6KuNgwZm2+wNMcXJIDc=
+
+Name: assets/www/img/icons/settings.png
+SHA1-Digest: wvqerH2qOltxW+9N2vY6xFcVXoE=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/BezierPlugin.js
+SHA1-Digest: 0kF+GU9kx7Ag9uJvLU5eOMMTvDU=
+
+Name: assets/www/img/icons/email.png
+SHA1-Digest: a2KhTt7ZyGFgBrvjDyIh6F0cw0Q=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/EaselPlugin.js
+SHA1-Digest: 53pkatZJ1Ov7ZCicBzR+8VTcgwM=
+
+Name: assets/www/js/lib/greensock/minified/plugins/ThrowPropsPlugin.mi
+ n.js
+SHA1-Digest: lEkWBe++nCQZPL7IDqobWAxM00E=
+
+Name: resources.arsc
+SHA1-Digest: vwSvIXfPfkn8J5ZPbE4L5y3udbM=
+
+Name: assets/www/css/sherettewebs/plugins/dial/dial.css
+SHA1-Digest: rn1ydLokN42ai/Yhev5IIE7Cqac=
+
+Name: assets/www/js/views/bluetoothunit/BluetoothUnitConnectView.js
+SHA1-Digest: LHVCTpqyJdXRtcLgwCX6YG1v/cQ=
+
+Name: assets/www/js/models/truck/TruckDeviceModel.js
+SHA1-Digest: NJjbhl624uuSndZnieygGtZ9MgY=
+
+Name: AndroidManifest.xml
+SHA1-Digest: Wwaa4P8naj1KY1pc3wf52MxS5BQ=
+
+Name: assets/www/img/logo.png
+SHA1-Digest: 1Ql7vcPCoaNb3HrpibXIbOVDpC4=
+
+Name: assets/www/js/views/truck/TruckConfigImageView.js
+SHA1-Digest: mMSlBHT92y5r4QsVRam2EQVQ+1o=
+
+Name: assets/www/js/lib/greensock/uncompressed/TweenLite.js
+SHA1-Digest: +nuTiWXBTRSQDIrKZ24nohl7OkE=
+
+Name: assets/www/js/app.js
+SHA1-Digest: Re9piDdlFbKVVPwD1gQGf1naVeE=
+
+Name: assets/www/css/topcoat/topcoat-mobile-dark.min.css
+SHA1-Digest: bQJ5LzhgbZo0cqHBCcRLEbX8ghw=
+
+Name: assets/www/js/lib/jquery/jquery-1.11.1.min.map
+SHA1-Digest: mXhcaEFHMiakswY9URxXJ02jh2g=
+
+Name: assets/www/img/icons/light-combo-box-bg2x.png
+SHA1-Digest: l3xUQUDO8NX2vjlWi7YOsRu+ISI=
+
+Name: assets/www/js/lib/sherettewebs/plugins/dial/MaskDialPlugin.js
+SHA1-Digest: uzXFvepz5TB7SAayssD4d1oaCZg=
+
+Name: assets/www/js/views/sync/SyncDataView.js
+SHA1-Digest: o5JHWrz+iL9og4oDB/qa1fnxTu4=
+
+Name: assets/www/css/index.html
+SHA1-Digest: OVHQFVYUGt1VeRynir9tPMrxqQA=
+
+Name: assets/www/js/lib/easing/easing.js
+SHA1-Digest: 3Axf2ruIuXHfTfMeX6oy3uHbbbU=
+
+Name: assets/www/js/models/bluetooth/BluetoothCharacteristicModel.js
+SHA1-Digest: QAj5XK5pwVxooa1dpGtmfPx+l44=
+
+Name: classes.dex
+SHA1-Digest: g/eIK+zsB/Pparooncoeq9k8SNo=
+
+Name: assets/www/css/topcoat/topcoat-desktop-dark.min.css
+SHA1-Digest: tmSo+wNRaj/lMGd8Y6rBQjgDje8=
+
+Name: assets/www/js/lib/backbone/backbone-min.map
+SHA1-Digest: st86MTM+NomYNqft/Smx02NRjPQ=
+
+Name: assets/www/plugins/com.randdusing.bluetoothle/www/bluetoothle.js
+SHA1-Digest: 5EXUvyDnb8fekAfowmfxxquNmDs=
+
+Name: assets/www/js/lib/greensock/minified/plugins/CSSRulePlugin.min.j
+ s
+SHA1-Digest: 1F4fCyiS8BhpD8tKbz5G9i8a6HY=
+
+Name: res/drawable/icon.png
+SHA1-Digest: 1XnYiS/uOGOTyXQr88GkACaRBOA=
+
+Name: assets/www/img/sw/plugin/slider/active-page-icon.png
+SHA1-Digest: /zq/JrtcwNaZSpNvwgx/uTj1y+k=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/RoundPropsPlugi
+ n.js
+SHA1-Digest: SLQPR3Q++jlF9dt9DvCjrGTRrpY=
+
+Name: assets/www/img/icons/icon-order-down.png
+SHA1-Digest: Y76jwekFbo6Axh7znQHZZJvXBGg=
+
+Name: assets/www/js/lib/sherettewebs/plugins/modal-window/ModalWindowP
+ lugin.js
+SHA1-Digest: kYwBDdqF67CG5MZyJ8xNQzv9TH4=
+
+Name: assets/www/img/icons/drop-down-triangle-dark.png
+SHA1-Digest: pLXj08wYyxGLwCgT7ECoFdRPp9Y=
+
+Name: assets/www/js/lib/underscore/underscore-min-old.js
+SHA1-Digest: BzBUuq73hmJkABbzE3Nxjazvaps=
+
+Name: assets/www/img/icons/icon-disconnecting.png
+SHA1-Digest: z2VRgUrPqEIx3xpjE5LMI3Sd6mc=
+
+Name: assets/www/js/lib/jquery/jquery-min.js
+SHA1-Digest: voxw4DMG8DFCyFsDHr2P7px9y+0=
+
+Name: assets/www/js/main.js
+SHA1-Digest: S7SSTDpQBEcVmOdCmTYs9td/1wM=
+
+Name: res/drawable-port-ldpi-v4/screen.png
+SHA1-Digest: T+wlNNlr1BTfCpXGsL2jnCcMMjU=
+
+Name: assets/www/js/lib/greensock/minified/plugins/BezierPlugin.min.js
+SHA1-Digest: 3MDEFrUM9Vwtw94dz5LLc/UK2e0=
+
+Name: assets/www/img/rwls-logo.png
+SHA1-Digest: WIcZGN7MUGOMM8d3IkW/Z2ZrVvU=
+
+Name: assets/www/img/truck-configurations/old/two-axle-back.png
+SHA1-Digest: vk2hqChLs9uOlsGnkE/0DrgC9yk=
+
+Name: assets/www/js/lib/greensock/uncompressed/easing/EasePack.js
+SHA1-Digest: 795/GdXe7D+ZsrZ2gufospyLlrA=
+
+Name: assets/www/img/truck-configurations/old/three-axle.jpg
+SHA1-Digest: J4eGS3ZKMidKnZc8+azkHYnANeE=
+
+Name: assets/www/js/lib/greensock/minified/plugins/DirectionalRotation
+ Plugin.min.js
+SHA1-Digest: wYzd3S5ZlCvIjC3xV6YXekgen+w=
+
+Name: assets/www/js/collections/profile/ProfileCollection.js
+SHA1-Digest: 4yvA95Vzfex0adh2tcFd15VtZlo=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ IOSDiscoverServices.js
+SHA1-Digest: OUZZ4LnCPF6Hvbh4e5KIlHhRCS0=
+
+Name: assets/www/css/sherettewebs/core.css
+SHA1-Digest: mRcRiZwEuYTvD1g+zkkgRUF9Ej4=
+
+Name: assets/www/js/lib/sherettewebs/plugins/bluetooth/BluetoothPlugin
+ CoreConnect.js
+SHA1-Digest: pkVHh8XqXYrftDXtlk9XjOBHW4A=
+
+Name: assets/www/img/icons/icon-scale.png
+SHA1-Digest: hUAf8dy+QEfcoX4rwLzD6s8Fneo=
+
+Name: assets/www/img/icons/icon-connect.png
+SHA1-Digest: Gb+rkr2DwL5Cw41twjyflyn4O8s=
+
+Name: assets/www/js/lib/greensock/minified/TimelineLite.min.js
+SHA1-Digest: QCWuK55LdW2m0V0SbWVouyNKsZ8=
+
+Name: assets/www/js/lib/easing/easing-min.js
+SHA1-Digest: mW0wIk21IH/w8S5Fakc2DnFO4B4=
+
+Name: assets/www/js/lib/require/require.js
+SHA1-Digest: 7DZQk6iNjsPKiikqHPFAosUOI7Y=
+
+Name: assets/www/js/collections/truck/TruckAxleCollection.js
+SHA1-Digest: Fg10Dt6tzPn3T0CqYl7i4m8b7w0=
+
+Name: assets/www/img/icons/search-bg2x.png
+SHA1-Digest: KFXMLLFKqUCnVOCwktmsX5bDFJE=
+
+Name: assets/www/js/views/truck/TruckWeightView.js
+SHA1-Digest: 0TMCQ258QeL+6siJryfmOBx+u2Q=
+
+Name: assets/www/build/build.js
+SHA1-Digest: NdjNz3CtlgXwmOCgKEL+xPMuDik=
+
+Name: assets/www/css/topcoat/topcoat-desktop-light.min.css
+SHA1-Digest: xKTvrBdJ2RsQXApApg5wmFL12AY=
+
+Name: assets/www/img/icons/iconScale.png
+SHA1-Digest: XDNmayin8f6dNzCH0zWQQrKRsOc=
+
+Name: assets/www/index.html
+SHA1-Digest: otYe59aqjfD8dqWaf85jqC77fec=
+
+Name: assets/www/img/icons/iconSend.png
+SHA1-Digest: 8b+gvODWMcVJH+qG4qjlV6egm14=
+
+Name: assets/www/js/lib/greensock/minified/TweenMax.min.js
+SHA1-Digest: rUa9ypKtlAPjtRYEhbzWsvrhZIM=
+
+Name: assets/www/img/icons/dark-combo-box-bg2x.png
+SHA1-Digest: sJgzWC7Qk+c6qRgRc3N1aw0hRJc=
+
+Name: assets/www/img/truck-configurations/three-axle.png
+SHA1-Digest: Q6SDRvnp9GLA7sCqnu+/Q1GhBtI=
+
+Name: res/drawable-port-mdpi-v4/screen.png
+SHA1-Digest: r7nIdYX21IxyPdsN7Z3kT0+klB4=
+
+Name: assets/www/js/lib/greensock/minified/easing/EasePack.min.js
+SHA1-Digest: +TQEIJtXXYkTYUVaQ2BodYhxPSo=
+
+Name: assets/www/js/lib/greensock/uncompressed/plugins/AttrPlugin.js
+SHA1-Digest: O7ghZ+uILkNDtjr9glatWRJbfUk=
+
+Name: assets/www/css/mask-dial.css
+SHA1-Digest: mmUXsq9zv4Dk87zCZThnBKy6Xfc=
+
+Name: assets/www/js/views/scan/ScanListView.js
+SHA1-Digest: RTE4+W1mV92HOFNc9mTAtw4XpBM=
+
+Name: assets/www/img/icons/icon-bluetooth-512.png
+SHA1-Digest: RVadI3kLCDWj5np4KNNQWPvG7RA=
+
+Name: assets/www/img/icons/alert_good.png
+SHA1-Digest: oNXUAnUM6X+tlal1H3z8q9Byj2s=
+
+Name: assets/www/js/lib/backbone/backbone-min.js
+SHA1-Digest: XQgFLiByXDvIcmyLBYA7UDQW0n8=
+
+Name: assets/www/img/icons/icon-alert-circled-128.png
+SHA1-Digest: wUPHkDwZ1gJdOT0pUQ+dZpF56QA=
+
+Name: assets/www/img/dial/color-gradient.png
+SHA1-Digest: ET0iVEXpql4AxupZ43QW5Q8FUas=
+
+Name: assets/www/css/topcoat/topcoat-mobile-light.min.css
+SHA1-Digest: HZgOPogkfTFmV/YQc/Oawx7z4pc=
+
+Name: assets/www/img/truck-configurations/four-axle.png
+SHA1-Digest: bHbRCJwyOOUdhhLMYEa8SNLX64Y=
+
+Name: assets/www/img/icons/icon-back.png
+SHA1-Digest: gw2kDhAb2D+mFUMKm3nYbj8o/9I=
+
+Name: assets/www/img/sw/plugin/slider/inactive-page-icon.png
+SHA1-Digest: fR+v9cXGo2O92V9ZTeOP/tvxOw4=
+
+Name: assets/www/templates/boilerplate.html
+SHA1-Digest: k/lPQfGweQrrPuWBza54K9IKgIU=
+
+Name: assets/www/img/icons/icon-settings.png
+SHA1-Digest: yG+Y+1nZKSg3T4zE5gT+6RzaZQw=
+
+Name: assets/www/css/lj.css
+SHA1-Digest: /J6Eb2K5UQzrYALjEs6HhrlrAfk=
+
+Name: assets/www/js/models/settings/SettingsModel.js
+SHA1-Digest: zU7EdeouOFBm5brWDhbI6eugeyo=
+
+Name: assets/www/img/icons/checkbox_unchecked.png
+SHA1-Digest: F8PCx1s6B6XJKRK9DqioDMHFNho=
+
+Name: assets/www/js/lib/sherettewebs/sform.js
+SHA1-Digest: EIggDz6VnCBaul84XcL1rr+8ngk=
+
+Name: assets/www/css/topcoat/topcoat-desktop-dark.css
+SHA1-Digest: JyB7+/ob7iaFaklcazsEk2k527I=
+
+Name: assets/www/js/views/connection/ConnectionStatusView.js
+SHA1-Digest: Yth9IQ0cfcW7718FldX2w/XieYw=
+
+Name: assets/www/img/icons/checkbox_checked.png
+SHA1-Digest: 2pT65UyGYjB4nN/ixIT21Gzky5A=
+
+Name: assets/www/js/lib/greensock/minified/plugins/ScrollToPlugin.min.
+ js
+SHA1-Digest: nAMM89593/3HzvWyX+ZuA0w3Pww=
+
+Name: assets/www/img/icons/search-bg.png
+SHA1-Digest: DmEvfKEHjGWOrXt5W3fIgYAHKG0=
+
+Name: assets/www/css/slider.css
+SHA1-Digest: +dtkjXsQbbPXv2ETDVqdHOY1juk=
+
+Name: assets/www/img/icons/icon-connecting.png
+SHA1-Digest: qDVPeP7wLCGgGuRciy88ERJl5vQ=
+
+Name: assets/www/js/models/profile/ProfileModel.js
+SHA1-Digest: eIbr1VvZv689OQd6nBqv0EUSKRc=
+
+Name: assets/www/img/icons/pop-up-triangle.png
+SHA1-Digest: wQ8VEvkEJW2EP6HAFSwUEtWw+5g=
+
+Name: assets/www/css/topcoat/topcoat-mobile-light.css
+SHA1-Digest: zXWR8GLMpFRyCDLMJ/GS2ArP0x4=
+
